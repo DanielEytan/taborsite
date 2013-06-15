@@ -1,0 +1,99 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+ @import "compass/reset";
+ $sans:'Droid Sans', sans-serif;
+ $sans2: 'Roboto', sans-serif;
+ $serif: 'Vollkorn', serif;
+ $blue: #1f445c;
+ $red: #EA593D;
+ $deba: #e8deba;
+/* html { 
+  background: url(../images/applicationflow.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+*/
+body {
+	font: {
+		family: $serif;
+		weight: 400;
+		size: 20px;
+	}
+	line-height: 1.2em;
+	color: $blue;
+}
+hgroup {
+	width: 1000px;
+}
+h1 {
+	font: {
+		family: $sans;
+		weight: 400;
+		size: 20px;
+	}
+}
+h2 {
+	font: {
+		family: $sans;
+		weight: 700;
+		size: 20px;
+	}
+	padding: 20px 0;
+}
+h3 {
+	font-size: 60px;
+	line-height: 1.2em;
+	color: $blue;
+	margin-top: 220px;
+}
+p {
+	padding:30px 0;
+}
+b {
+	font-weight: 700;
+}
+address {
+	position: absolute;
+	top: 60px;
+	right: 60px;
+	line-height: 1.3em;
+	a {	
+		color: $red;
+		opacity: 0.6;
+		text-decoration: none;
+	}
+	a:hover {
+		opacity: 1;
+	}
+}
+header {
+	padding: 60px;
+}
+section {
+	padding: 30px 60px;
+	width:1000px;
+	&#wrapper {
+		img {
+			max-width: 200px;
+			max-height: 400px;
+
+		}
+	}
+}
+.tags {
+	li {
+		padding: 1px 15px;
+		background-color: $blue;
+		color: #fff;
+		display: inline;
+
+		border-top: 10px solid transparent;
+		border-bottom: 10px solid transparent; 
+
+	}
+}
