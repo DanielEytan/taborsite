@@ -78,10 +78,26 @@ section {
 	padding: 30px 60px;
 	width:1000px;
 	&#wrapper {
-		img {
-			max-width: 200px;
-			max-height: 400px;
-
+		// img {
+		// 	max-width: 200px;
+		// 	max-height: 400px;
+		// }
+		img.ava {
+			width: 40%;
+			height: auto;
+			margin-right: 5%;
+			-webkit-clip-path: polygon(
+				50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%
+				);
+			-moz-clip-path: polygon(
+				50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%
+				);
+			-ms-clip-path: polygon(
+				50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%
+				);
+			clip-path: polygon(
+				50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%
+				);
 		}
 	}
 }
@@ -97,3 +113,4 @@ section {
 
 	}
 }
+
