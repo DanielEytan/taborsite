@@ -28,7 +28,7 @@ body {
 	color: $blue;
 }
 hgroup {
-	width: 1000px;
+	width: 1160px;
 }
 h1 {
 	font: {
@@ -51,6 +51,11 @@ h3 {
 	// font-style: italic;
 	color: $blue;
 	margin-top: 120px;
+	a {
+		color: $blue;
+
+
+	}
 }
 p {
 	padding:30px 0;
@@ -84,7 +89,7 @@ section {
 		// 	max-height: 400px;
 		// }
 		img.ava {
-			width: 40%;
+			width: 20%;
 			height: auto;
 			margin-right: 5%;
 			-webkit-clip-path: polygon(
