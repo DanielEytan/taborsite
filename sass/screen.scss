@@ -3,13 +3,24 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
+ @mixin background-gradient($color1, $color2) {
+ 	background-image: linear-gradient(bottom, $color1 0%, $color2 100%);
+ 	background-image: -o-linear-gradient(bottom, $color1 0%, $color2 100%);
+ 	background-image: -moz-linear-gradient(bottom, $color1 0%, $color2 100%);
+ 	background-image: -webkit-linear-gradient(bottom, $color1 0%, $color2 100%);
+ 	background-image: -ms-linear-gradient(bottom, $color1 0%, $color2 100%);
+ }
+
  @import "compass/reset";
  $sans:'Droid Sans', sans-serif;
  $sans2: 'Roboto', sans-serif;
  $serif: 'Vollkorn', serif;
+ $serif2: 'Merriweather', serif;
  $blue: #1f445c;
  $red: #EA593D;
  $deba: #e8deba;
+ $color1: red;
+ $color2: blue;
 /* html { 
   background: url(../images/applicationflow.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -20,15 +31,16 @@
 */
 body {
 	font: {
-		family: $serif;
-		weight: 400;
+		family: $serif2;
+		weight: 300;
 		size: 20px;
 	}
-	line-height: 1.2em;
+	// font-style: italic;
+	line-height: 28px;
 	color: $blue;
 }
 hgroup {
-	width: 1200px;
+	width: 1280px;
 }
 h1 {
 	font: {
@@ -46,11 +58,11 @@ h2 {
 	padding: 20px 0;
 }
 h3 {
-	font-size: 60px;
-	line-height: 1.2em;
+	font-size: 3.5rem;
 	// font-style: italic;
+	line-height: 4.8rem;
 	color: $blue;
-	margin-top: 120px;
+	margin-top: 160px;
 	a {
 		color: $blue;
 
@@ -64,25 +76,42 @@ b {
 	font-weight: 700;
 }
 address {
-	position: absolute;
-	top: 60px;
-	right: 60px;
 	line-height: 1.3em;
+	font-family: $sans;
+
+
 	a {	
-		color: $red;
-		opacity: 0.6;
+		color: $blue;
+		opacity: 0.8;
 		text-decoration: none;
 	}
 	a:hover {
 		opacity: 1;
+
+	}
+	div.lang {
+		margin-bottom: 10px;
+			position: absolute;
+
+		top: 60px;
+		left: 400px;
+	}
+	div.contact {
+			position: absolute;
+
+		top: 60px;
+		left: 800px;
+
 	}
 }
 header {
 	padding: 60px;
+	padding-bottom: 120px;
 }
 section {
 	padding: 30px 60px;
-	width:1000px;
+	background-color: $blue;
+	color: #fff;
 	&#wrapper {
 		// img {
 		// 	max-width: 200px;
@@ -105,6 +134,11 @@ section {
 				50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%
 				);
 		}
+		img.case {
+			@include background-gradient(transparentize(white, 0.2), transparentize(white, 1));
+			width: 800px;
+			display:none;
+		}
 	}
 }
 .tags {
@@ -119,4 +153,7 @@ section {
 
 	}
 }
-
+#case {
+	@include background-gradient(transparentize(white, 0.3), transparentize(white, 1));
+	width: 800px;
+}
