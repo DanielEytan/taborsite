@@ -146,13 +146,13 @@ address div.lang {
   margin-bottom: 10px;
   position: absolute;
   top: 60px;
-  left: 400px;
+  right: 60px;
 }
 /* line 99, ../sass/screen.scss */
 address div.contact {
   position: absolute;
   top: 60px;
-  left: 800px;
+  left: 400px;
 }
 
 /* line 107, ../sass/screen.scss */
