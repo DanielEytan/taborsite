@@ -11,16 +11,42 @@
  	background-image: -ms-linear-gradient(bottom, $color1 0%, $color2 100%);
  }
 
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot');
+	src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.woff') format('woff'),
+		url('../fonts/icomoon.ttf') format('truetype'),
+		url('../fonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+[data-icon]:before {
+	font-family: 'icomoon';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	margin-right: 15px;
+	-webkit-font-smoothing: antialiased;
+}
  @import "compass/reset";
  $sans:'Droid Sans', sans-serif;
  $sans2: 'Roboto', sans-serif;
  $serif: 'Vollkorn', serif;
  $serif2: 'Merriweather', serif;
- $blue: #1f445c;
+ $blue: #299;
+ $dark: #1d1d1d;
  $red: #EA593D;
  $deba: #e8deba;
  $color1: red;
  $color2: blue;
+
+
+
+
 /* html { 
   background: url(../images/applicationflow.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -29,24 +55,27 @@
   background-size: cover;
 }
 */
+
 body {
 	font: {
 		family: $serif2;
 		weight: 300;
-		size: 20px;
+		size: 25px;
 	}
 	// font-style: italic;
 	line-height: 28px;
 	color: $blue;
+	-webkit-font-smoothing: antialiased;
+
 }
 hgroup {
 	width: 1280px;
+	color: #299;
 }
 h1 {
 	font: {
 		family: $sans;
 		weight: 400;
-		size: 20px;
 	}
 }
 h2 {
@@ -61,8 +90,8 @@ h3 {
 	font-size: 3.5rem;
 	// font-style: italic;
 	line-height: 4.8rem;
-	color: $blue;
 	margin-top: 160px;
+	color: #F3ECDD;
 	a {
 		color: $blue;
 
@@ -76,25 +105,18 @@ b {
 	font-weight: 700;
 }
 address {
-	line-height: 1.3em;
+	line-height: 1.5em;
 	font-family: $sans;
 
 
 	a {	
-		color: $blue;
-		opacity: 0.8;
+		color: #299;
+		opacity: 0.5;
 		text-decoration: none;
 	}
 	a:hover {
 		opacity: 1;
 
-	}
-	div.lang {
-		margin-bottom: 10px;
-			position: absolute;
-
-		top: 60px;
-		right: 60px;
 	}
 	div.contact {
 			position: absolute;
@@ -107,10 +129,10 @@ address {
 header {
 	padding: 60px;
 	padding-bottom: 120px;
+	background-color: #1d1d1d;
 }
 section {
 	padding: 30px 60px;
-	background-color: #299;
 	color: #fff;
 	&#wrapper {
 		// img {
@@ -139,6 +161,13 @@ section {
 			width: 800px;
 			display:none;
 		}
+	}
+	&.white {
+		background-color: #fff;
+		color: $dark;
+	}
+	&.blue {
+		background-color: #299;
 	}
 }
 .tags {

@@ -2,6 +2,27 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot");
+  src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 24, ../sass/screen.scss */
+[data-icon]:before {
+  font-family: 'icomoon';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  margin-right: 15px;
+  -webkit-font-smoothing: antialiased;
+}
+
 /* line 17, ../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -75,28 +96,29 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background-size: cover;
 }
 */
-/* line 32, ../sass/screen.scss */
+/* line 59, ../sass/screen.scss */
 body {
   font-family: "Merriweather", serif;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 25px;
   line-height: 28px;
-  color: #1f445c;
+  color: #229999;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* line 42, ../sass/screen.scss */
+/* line 71, ../sass/screen.scss */
 hgroup {
   width: 1280px;
+  color: #299;
 }
 
-/* line 45, ../sass/screen.scss */
+/* line 75, ../sass/screen.scss */
 h1 {
   font-family: "Droid Sans", sans-serif;
   font-weight: 400;
-  font-size: 20px;
 }
 
-/* line 52, ../sass/screen.scss */
+/* line 81, ../sass/screen.scss */
 h2 {
   font-family: "Droid Sans", sans-serif;
   font-weight: 700;
@@ -104,70 +126,63 @@ h2 {
   padding: 20px 0;
 }
 
-/* line 60, ../sass/screen.scss */
+/* line 89, ../sass/screen.scss */
 h3 {
   font-size: 3.5rem;
   line-height: 4.8rem;
-  color: #1f445c;
   margin-top: 160px;
+  color: #F3ECDD;
 }
-/* line 66, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
 h3 a {
-  color: #1f445c;
+  color: #229999;
 }
 
-/* line 72, ../sass/screen.scss */
+/* line 101, ../sass/screen.scss */
 p {
   padding: 30px 0;
 }
 
-/* line 75, ../sass/screen.scss */
+/* line 104, ../sass/screen.scss */
 b {
   font-weight: 700;
 }
 
-/* line 78, ../sass/screen.scss */
+/* line 107, ../sass/screen.scss */
 address {
-  line-height: 1.3em;
+  line-height: 1.5em;
   font-family: "Droid Sans", sans-serif;
 }
-/* line 83, ../sass/screen.scss */
+/* line 112, ../sass/screen.scss */
 address a {
-  color: #1f445c;
-  opacity: 0.8;
+  color: #299;
+  opacity: 0.5;
   text-decoration: none;
 }
-/* line 88, ../sass/screen.scss */
+/* line 117, ../sass/screen.scss */
 address a:hover {
   opacity: 1;
 }
-/* line 92, ../sass/screen.scss */
-address div.lang {
-  margin-bottom: 10px;
-  position: absolute;
-  top: 60px;
-  right: 60px;
-}
-/* line 99, ../sass/screen.scss */
+/* line 121, ../sass/screen.scss */
 address div.contact {
   position: absolute;
   top: 60px;
   left: 400px;
 }
 
-/* line 107, ../sass/screen.scss */
+/* line 129, ../sass/screen.scss */
 header {
   padding: 60px;
   padding-bottom: 120px;
+  background-color: #1d1d1d;
 }
 
-/* line 111, ../sass/screen.scss */
+/* line 134, ../sass/screen.scss */
 section {
   padding: 30px 60px;
-  background-color: #299;
   color: #fff;
 }
-/* line 120, ../sass/screen.scss */
+/* line 142, ../sass/screen.scss */
 section#wrapper img.ava {
   width: 20%;
   height: auto;
@@ -177,7 +192,7 @@ section#wrapper img.ava {
   -ms-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
   clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
 }
-/* line 137, ../sass/screen.scss */
+/* line 159, ../sass/screen.scss */
 section#wrapper img.case {
   background-image: linear-gradient(bottom, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%);
   background-image: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%);
@@ -187,18 +202,27 @@ section#wrapper img.case {
   width: 800px;
   display: none;
 }
+/* line 165, ../sass/screen.scss */
+section.white {
+  background-color: #fff;
+  color: #1d1d1d;
+}
+/* line 169, ../sass/screen.scss */
+section.blue {
+  background-color: #299;
+}
 
-/* line 145, ../sass/screen.scss */
+/* line 174, ../sass/screen.scss */
 .tags li {
   padding: 1px 15px;
-  background-color: #1f445c;
+  background-color: #229999;
   color: #fff;
   display: inline;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
 }
 
-/* line 156, ../sass/screen.scss */
+/* line 185, ../sass/screen.scss */
 #case {
   background-image: linear-gradient(bottom, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
   background-image: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
