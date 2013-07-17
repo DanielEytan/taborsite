@@ -2,7 +2,28 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot");
+  src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 49, ../sass/screen.scss */
+[data-icon]:before {
+  font-family: 'icomoon';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  margin-right: 15px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 17, ../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,45 +45,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -75,84 +96,96 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background-size: cover;
 }
 */
-/* line 21, ../sass/screen.scss */
+/* line 85, ../sass/screen.scss */
 body {
-  font-family: "Vollkorn", serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.2em;
-  color: #1f445c;
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 28px;
+  color: #229999;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* line 30, ../sass/screen.scss */
+/* line 97, ../sass/screen.scss */
 hgroup {
-  width: 1000px;
+  width: 1500px;
+  color: #299;
 }
 
-/* line 33, ../sass/screen.scss */
+/* line 101, ../sass/screen.scss */
 h1 {
   font-family: "Droid Sans", sans-serif;
   font-weight: 400;
-  font-size: 20px;
 }
 
-/* line 40, ../sass/screen.scss */
+/* line 107, ../sass/screen.scss */
 h2 {
-  font-family: "Droid Sans", sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  padding: 20px 0;
+  font-family: 'Indie Flower', cursive;
+  font-size: 10rem;
+  color: #229999;
+  text-align: left;
+  padding: 100px 0;
 }
 
-/* line 48, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 h3 {
-  font-size: 60px;
-  line-height: 1.2em;
-  color: #1f445c;
-  margin-top: 220px;
+  font-size: 4rem;
+  line-height: 4.8rem;
+  margin-top: 160px;
+  color: #F3ECDD;
+}
+/* line 125, ../sass/screen.scss */
+h3 a {
+  color: #229999;
 }
 
-/* line 54, ../sass/screen.scss */
+/* line 131, ../sass/screen.scss */
 p {
   padding: 30px 0;
 }
 
-/* line 57, ../sass/screen.scss */
+/* line 134, ../sass/screen.scss */
 b {
   font-weight: 700;
 }
 
-/* line 60, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
 address {
-  position: absolute;
-  top: 60px;
-  right: 60px;
-  line-height: 1.3em;
+  line-height: 1.5em;
+  font-family: "Droid Sans", sans-serif;
 }
-/* line 65, ../sass/screen.scss */
+/* line 142, ../sass/screen.scss */
 address a {
-  color: #ea593d;
-  opacity: 0.6;
+  color: #299;
+  opacity: 0.5;
   text-decoration: none;
 }
-/* line 70, ../sass/screen.scss */
+/* line 147, ../sass/screen.scss */
 address a:hover {
   opacity: 1;
 }
+/* line 151, ../sass/screen.scss */
+address div.contact {
+  position: absolute;
+  top: 60px;
+  left: 400px;
+}
 
-/* line 74, ../sass/screen.scss */
+/* line 159, ../sass/screen.scss */
 header {
   padding: 60px;
+  padding-bottom: 120px;
+  background-color: #1d1d1d;
 }
 
-/* line 77, ../sass/screen.scss */
+/* line 164, ../sass/screen.scss */
 section {
   padding: 30px 60px;
-  width: 1000px;
+  color: #fff;
 }
-/* line 85, ../sass/screen.scss */
+/* line 172, ../sass/screen.scss */
 section#wrapper img.ava {
-  width: 40%;
+  width: 20%;
   height: auto;
   margin-right: 5%;
   -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
@@ -160,11 +193,131 @@ section#wrapper img.ava {
   -ms-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
   clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
 }
+/* line 189, ../sass/screen.scss */
+section#wrapper img.case {
+  background-image: linear-gradient(bottom, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: -moz-linear-gradient(bottom, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: -ms-linear-gradient(bottom, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%);
+  width: 800px;
+  display: none;
+}
+/* line 195, ../sass/screen.scss */
+section.white {
+  background-color: #edede3;
+  color: #1d1d1d;
+}
+/* line 199, ../sass/screen.scss */
+section.blue {
+  background-color: #229999;
+}
 
-/* line 105, ../sass/screen.scss */
+/* line 204, ../sass/screen.scss */
 .tags li {
   padding: 1px 15px;
-  background-color: #1f445c;
+  background-color: #229999;
+  color: #fff;
+  display: inline;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+/* line 215, ../sass/screen.scss */
+#case {
+  background-image: linear-gradient(bottom, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: -moz-linear-gradient(bottom, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: -ms-linear-gradient(bottom, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
+  width: 800px;
+}
+
+/* line 220, ../sass/screen.scss */
+.container {
+  padding: 100px;
+}
+
+/* line 223, ../sass/screen.scss */
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+/* line 237, ../sass/screen.scss */
+.flex-container :first-child {
+  margin-top: 27px;
+}
+
+/* line 241, ../sass/screen.scss */
+.flex-item {
+  width: 600px;
+  margin-top: 10px;
+  margin-right: 50px;
+}
+/* line 245, ../sass/screen.scss */
+.flex-item img {
+  width: 750px;
+  /*@include box-shadow(grey 0px 0px 15px);*/
+  border-top-left-radius: 0.2em;
+  border-top-right-radius: 0.2em;
+}
+/* line 252, ../sass/screen.scss */
+.flex-item h1 {
+  font: "Vollkorn", serif;
+  padding: 20px 0;
+  color: #229999;
+  font-weight: 300;
+  width: 800px;
+  text-transform: uppercase;
+  border-top-style: dotted;
+  border-top-color: #229999;
+  border-top-width: 1px;
+}
+/* line 263, ../sass/screen.scss */
+.flex-item p {
+  color: #1d1d1d;
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  padding: 30px;
+}
+/* line 269, ../sass/screen.scss */
+.flex-item h4 {
+  font-size: 20px;
+  visibility: visible;
+  background-color: #229999;
+  padding: 15px;
+  font-weight: 700;
+  margin-top: 100px;
+}
+/* line 276, ../sass/screen.scss */
+.flex-item h4 a {
+  color: #edede3;
+  text-decoration: none;
+}
+
+/* line 283, ../sass/screen.scss */
+.flex-item :hover h4 {
+  visibility: visible;
+}
+
+/* line 289, ../sass/screen.scss */
+.flex-item-grow {
+  flex-grow: 2;
+}
+
+/* line 293, ../sass/screen.scss */
+.tags li {
+  padding: 1px 15px;
+  background-color: #229999;
   color: #fff;
   display: inline;
   border-top: 10px solid transparent;
