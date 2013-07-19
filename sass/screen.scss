@@ -60,6 +60,8 @@ flex: 0 1 $width;
  @import "compass/reset";
  $sans:'Droid Sans', sans-serif;
  $sans2: 'Roboto', sans-serif;
+ $sans3: 'Raleway', sans-serif;
+
  $serif: 'Vollkorn', serif;
  $serif2: 'Merriweather', serif;
  $blue: #299;
@@ -95,8 +97,8 @@ body {
 
 }
 hgroup {
-	width: 1500px;
 	color: #299;
+	padding-right: 180px;
 }
 h1 {
 	font: {
@@ -106,21 +108,22 @@ h1 {
 }
 h2 {
 	font: {
-		family: 'Indie Flower', cursive;
-		size: 10rem;
+		family: $sans;
+		weight: 900;
+		size: 5rem;
 	}
 	// border-top-style: solid;
 	// border-top-width: 10px;
 	// border-color:$dark;
-	color: $blue;
+	color: $dark;
 	text-align: left;
 	padding: 100px 0;
 }
 h3 {
-	font-size: 4rem;
+	font-size: 3rem;
 	// font-style: italic;
-	line-height: 4.8rem;
-	margin-top: 160px;
+	line-height: 4rem;
+	margin-top: 120px;
 	color: #F3ECDD;
 	a {
 		color: $blue;
@@ -149,16 +152,14 @@ address {
 
 	}
 	div.contact {
-			position: absolute;
-
+		position: absolute;
 		top: 60px;
 		left: 400px;
-
 	}
 }
 header {
 	padding: 60px;
-	padding-bottom: 120px;
+	padding-bottom: 80px;
 	background-color: #1d1d1d;
 }
 section {
