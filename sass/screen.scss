@@ -86,19 +86,19 @@ flex: 0 1 $width;
 
 body {
 	font: {
-		family: $serif2;
+		family: $sans;
 		weight: 300;
-		size: 25px;
+		size: 20px;
 	}
 	// font-style: italic;
-	line-height: 28px;
+	line-height: 30px;
 	color: $blue;
 	-webkit-font-smoothing: antialiased;
 
 }
 hgroup {
 	color: #299;
-	padding-right: 180px;
+	padding-right: 150px;
 }
 h1 {
 	font: {
@@ -120,9 +120,12 @@ h2 {
 	padding: 100px 0;
 }
 h3 {
-	font-size: 3rem;
+	font: {
+		family: $serif2;
+		size: 2.5rem;
+	}
 	// font-style: italic;
-	line-height: 4rem;
+	line-height: 3.5rem;
 	margin-top: 120px;
 	color: #F3ECDD;
 	a {
@@ -159,7 +162,7 @@ address {
 }
 header {
 	padding: 60px;
-	padding-bottom: 80px;
+	padding-bottom: 60px;
 	background-color: #1d1d1d;
 }
 section {
@@ -196,6 +199,9 @@ section {
 	&.white {
 		background-color: $bright;
 		color: $dark;
+		h3 {
+			color: $dark;
+		}
 	}
 	&.blue {
 		background-color: $blue;
@@ -218,11 +224,9 @@ section {
 	width: 800px;
 }
 
-.container {
-		padding:100px;
-}
+
 .flex-container {
-	padding: 0;
+	padding: 20px;
 	margin: 0;
 	list-style: none;
 
@@ -235,16 +239,15 @@ section {
 	-webkit-flex-flow: row wrap;
 	justify-content: space-between;
 }
-.flex-container :first-child {
-	margin-top: 27px;
-	//margin-right: 100px;
+.flex-container:hover {
+	background-color: #fff;
 }
 .flex-item {
 	width: 600px;
 	margin-top: 10px;
 	margin-right: 50px;
 	img {
-		width: 750px;
+		width: 600px;
 		/*@include box-shadow(grey 0px 0px 15px);*/
 		border-top-left-radius: 0.2em;
 		border-top-right-radius: 0.2em;
@@ -262,12 +265,20 @@ section {
  		border-top-width:1px;
 	}
 	p {
+		font: $sans;
 		color: $dark;
-		font-size: 2.5rem;
-		line-height: 3.5rem;
-		padding: 30px;
+	}
+	a {
+		font-weight: 700;
+		color: $dark;
+		border-top-style: solid;
+		border-top-width: 3px;
+		text-decoration: none;
+		padding-top:10px;
+		text-transform: uppercase;
 	}
 	h4 {
+		display: none;
 		font-size: 20px;
 		visibility: visible;
 		background-color: $blue;
