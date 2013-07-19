@@ -96,29 +96,38 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background-size: cover;
 }
 */
-/* line 87, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
 body {
   font-family: "Droid Sans", sans-serif;
   font-weight: 300;
   font-size: 20px;
   line-height: 30px;
-  color: #229999;
+  color: #3e406b;
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 99, ../sass/screen.scss */
-hgroup {
-  color: #299;
-  padding-right: 150px;
+/* line 100, ../sass/screen.scss */
+header {
+  padding: 60px;
+  padding-bottom: 80px;
 }
 
-/* line 103, ../sass/screen.scss */
+/* line 104, ../sass/screen.scss */
+hgroup {
+  color: #3e406b;
+  padding-right: 150px;
+  padding-bottom: 80px;
+  border-bottom-style: dotted;
+  border-bottom-width: 1px;
+}
+
+/* line 111, ../sass/screen.scss */
 h1 {
   font-family: "Droid Sans", sans-serif;
   font-weight: 400;
 }
 
-/* line 109, ../sass/screen.scss */
+/* line 117, ../sass/screen.scss */
 h2 {
   font-family: "Droid Sans", sans-serif;
   font-weight: 900;
@@ -128,64 +137,56 @@ h2 {
   padding: 100px 0;
 }
 
-/* line 122, ../sass/screen.scss */
+/* line 130, ../sass/screen.scss */
 h3 {
   font-family: "Merriweather", serif;
   font-size: 2.5rem;
   line-height: 3.5rem;
-  margin-top: 120px;
-  color: #F3ECDD;
+  margin-top: 150px;
 }
-/* line 131, ../sass/screen.scss */
+/* line 138, ../sass/screen.scss */
 h3 a {
-  color: #229999;
+  color: #3e406b;
 }
 
-/* line 137, ../sass/screen.scss */
+/* line 144, ../sass/screen.scss */
 p {
   padding: 30px 0;
 }
 
-/* line 140, ../sass/screen.scss */
+/* line 147, ../sass/screen.scss */
 b {
   font-weight: 700;
 }
 
-/* line 143, ../sass/screen.scss */
+/* line 150, ../sass/screen.scss */
 address {
   line-height: 1.5em;
   font-family: "Droid Sans", sans-serif;
 }
-/* line 148, ../sass/screen.scss */
+/* line 155, ../sass/screen.scss */
 address a {
-  color: #299;
+  color: #3e406b;
   opacity: 0.5;
   text-decoration: none;
 }
-/* line 153, ../sass/screen.scss */
+/* line 160, ../sass/screen.scss */
 address a:hover {
   opacity: 1;
 }
-/* line 157, ../sass/screen.scss */
+/* line 164, ../sass/screen.scss */
 address div.contact {
   position: absolute;
   top: 60px;
-  left: 400px;
+  left: 300px;
 }
 
-/* line 163, ../sass/screen.scss */
-header {
-  padding: 60px;
-  padding-bottom: 60px;
-  background-color: #1d1d1d;
-}
-
-/* line 168, ../sass/screen.scss */
+/* line 171, ../sass/screen.scss */
 section {
   padding: 30px 60px;
   color: #fff;
 }
-/* line 176, ../sass/screen.scss */
+/* line 179, ../sass/screen.scss */
 section#wrapper img.ava {
   width: 20%;
   height: auto;
@@ -195,7 +196,7 @@ section#wrapper img.ava {
   -ms-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
   clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
 }
-/* line 193, ../sass/screen.scss */
+/* line 196, ../sass/screen.scss */
 section#wrapper img.case {
   background-image: linear-gradient(bottom, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%);
   background-image: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%);
@@ -205,31 +206,30 @@ section#wrapper img.case {
   width: 800px;
   display: none;
 }
-/* line 199, ../sass/screen.scss */
+/* line 202, ../sass/screen.scss */
 section.white {
-  background-color: #edede3;
   color: #1d1d1d;
 }
-/* line 202, ../sass/screen.scss */
+/* line 205, ../sass/screen.scss */
 section.white h3 {
   color: #1d1d1d;
 }
-/* line 206, ../sass/screen.scss */
+/* line 209, ../sass/screen.scss */
 section.blue {
-  background-color: #229999;
+  background-color: #3e406b;
 }
 
-/* line 211, ../sass/screen.scss */
+/* line 214, ../sass/screen.scss */
 .tags li {
   padding: 1px 15px;
-  background-color: #229999;
+  background-color: #3e406b;
   color: #fff;
   display: inline;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
 }
 
-/* line 222, ../sass/screen.scss */
+/* line 225, ../sass/screen.scss */
 #case {
   background-image: linear-gradient(bottom, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
   background-image: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
@@ -239,9 +239,9 @@ section.blue {
   width: 800px;
 }
 
-/* line 228, ../sass/screen.scss */
+/* line 231, ../sass/screen.scss */
 .flex-container {
-  padding: 20px;
+  padding: 0;
   margin: 0;
   list-style: none;
   display: -webkit-box;
@@ -253,14 +253,8 @@ section.blue {
   justify-content: space-between;
 }
 
-/* line 242, ../sass/screen.scss */
-.flex-container:hover {
-  background-color: #fff;
-}
-
 /* line 245, ../sass/screen.scss */
 .flex-item {
-  width: 600px;
   margin-top: 10px;
   margin-right: 50px;
 }
@@ -274,21 +268,20 @@ section.blue {
 /* line 256, ../sass/screen.scss */
 .flex-item h1 {
   font: "Vollkorn", serif;
-  padding: 20px 0;
-  color: #229999;
+  color: #3e406b;
   font-weight: 300;
-  width: 800px;
-  text-transform: uppercase;
-  border-top-style: dotted;
-  border-top-color: #229999;
-  border-top-width: 1px;
+  width: 200px;
+  border-top-color: #3e406b;
+  border-top-width: 3px;
 }
-/* line 267, ../sass/screen.scss */
+/* line 266, ../sass/screen.scss */
 .flex-item p {
   font: "Droid Sans", sans-serif;
   color: #1d1d1d;
+  width: 400px;
+  padding-right: 100px;
 }
-/* line 271, ../sass/screen.scss */
+/* line 272, ../sass/screen.scss */
 .flex-item a {
   font-weight: 700;
   color: #1d1d1d;
@@ -298,36 +291,36 @@ section.blue {
   padding-top: 10px;
   text-transform: uppercase;
 }
-/* line 280, ../sass/screen.scss */
+/* line 281, ../sass/screen.scss */
 .flex-item h4 {
   display: none;
   font-size: 20px;
   visibility: visible;
-  background-color: #229999;
+  background-color: #3e406b;
   padding: 15px;
   font-weight: 700;
   margin-top: 100px;
 }
-/* line 288, ../sass/screen.scss */
+/* line 289, ../sass/screen.scss */
 .flex-item h4 a {
   color: #edede3;
   text-decoration: none;
 }
 
-/* line 295, ../sass/screen.scss */
+/* line 296, ../sass/screen.scss */
 .flex-item :hover h4 {
   visibility: visible;
 }
 
-/* line 301, ../sass/screen.scss */
+/* line 302, ../sass/screen.scss */
 .flex-item-grow {
   flex-grow: 2;
 }
 
-/* line 305, ../sass/screen.scss */
+/* line 306, ../sass/screen.scss */
 .tags li {
   padding: 1px 15px;
-  background-color: #229999;
+  background-color: #3e406b;
   color: #fff;
   display: inline;
   border-top: 10px solid transparent;

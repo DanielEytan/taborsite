@@ -64,7 +64,8 @@ flex: 0 1 $width;
 
  $serif: 'Vollkorn', serif;
  $serif2: 'Merriweather', serif;
- $blue: #299;
+ $blue: #3E406B;
+ $blue2: #299;
  $dark: #1d1d1d;
  $bright: #EDEDE3;
  $red: #EA593D;
@@ -96,9 +97,16 @@ body {
 	-webkit-font-smoothing: antialiased;
 
 }
+header {
+	padding: 60px;
+	padding-bottom: 80px;
+}
 hgroup {
-	color: #299;
+	color: $blue;
 	padding-right: 150px;
+	padding-bottom:80px;
+	border-bottom-style: dotted;
+	border-bottom-width: 1px;
 }
 h1 {
 	font: {
@@ -126,8 +134,7 @@ h3 {
 	}
 	// font-style: italic;
 	line-height: 3.5rem;
-	margin-top: 120px;
-	color: #F3ECDD;
+	margin-top: 150px;
 	a {
 		color: $blue;
 
@@ -146,7 +153,7 @@ address {
 
 
 	a {	
-		color: #299;
+		color: $blue;
 		opacity: 0.5;
 		text-decoration: none;
 	}
@@ -157,14 +164,10 @@ address {
 	div.contact {
 		position: absolute;
 		top: 60px;
-		left: 400px;
+		left: 300px;
 	}
 }
-header {
-	padding: 60px;
-	padding-bottom: 60px;
-	background-color: #1d1d1d;
-}
+
 section {
 	padding: 30px 60px;
 	color: #fff;
@@ -197,7 +200,7 @@ section {
 		}
 	}
 	&.white {
-		background-color: $bright;
+		// background-color: $bright;
 		color: $dark;
 		h3 {
 			color: $dark;
@@ -226,7 +229,7 @@ section {
 
 
 .flex-container {
-	padding: 20px;
+	padding: 0;
 	margin: 0;
 	list-style: none;
 
@@ -239,11 +242,8 @@ section {
 	-webkit-flex-flow: row wrap;
 	justify-content: space-between;
 }
-.flex-container:hover {
-	background-color: #fff;
-}
 .flex-item {
-	width: 600px;
+	// width: 300px;
 	margin-top: 10px;
 	margin-right: 50px;
 	img {
@@ -255,18 +255,19 @@ section {
 	}
 	h1 {
 		font: $serif;
-		padding:20px 0;
 		color: $blue;
 		font-weight: 300;
-		width: 800px;
-		text-transform: uppercase;
-		border-top-style:dotted;
+		width: 200px;
+		// text-transform: uppercase;
+		//border-top-style:solid;
  		border-top-color:$blue;
- 		border-top-width:1px;
+ 		border-top-width:3px;
 	}
 	p {
 		font: $sans;
 		color: $dark;
+		width: 400px;
+		padding-right: 100px;
 	}
 	a {
 		font-weight: 700;
