@@ -62,7 +62,7 @@ flex: 0 1 $width;
  $sans2: 'Roboto', sans-serif;
  $sans3: 'Raleway', sans-serif;
 
- $serif: 'Vollkorn', serif;
+ $serif: 'Droid Serif', serif;
  $serif2: 'Merriweather', serif;
  $blue: #3E406B;
  $blue2: #299;
@@ -99,13 +99,13 @@ body {
 }
 header {
 	padding: 60px;
-	padding-bottom: 80px;
+	padding-bottom: 0px;
 }
 hgroup {
 	color: $blue;
-	padding-right: 150px;
-	padding-bottom:80px;
-	border-bottom-style: dotted;
+	padding-right: 400px;
+	padding-bottom:150px;
+	//border-bottom-style: dotted;
 	border-bottom-width: 1px;
 }
 h1 {
@@ -130,10 +130,12 @@ h2 {
 h3 {
 	font: {
 		family: $serif2;
-		size: 2.5rem;
+		size: 3.5rem;
+		weight: 400;
 	}
 	// font-style: italic;
-	line-height: 3.5rem;
+	// text-transform: uppercase;
+	line-height: 4.2rem;
 	margin-top: 150px;
 	a {
 		color: $blue;
@@ -165,6 +167,9 @@ address {
 		position: absolute;
 		top: 60px;
 		left: 300px;
+		a {
+			margin-right: 40px;
+		}
 	}
 }
 
@@ -232,7 +237,7 @@ section {
 	padding: 0;
 	margin-bottom: 20px;
 	list-style: none;
-	opacity: 0.7;
+	opacity: 1;
 
 	display: -webkit-box;
 	display: -moz-box;
@@ -244,7 +249,7 @@ section {
 	justify-content: space-between;
 }
 .flex-container:hover {
-	opacity: 1;
+	opacity: 0.7;
 }
 .flex-item {
 	// width: 300px;

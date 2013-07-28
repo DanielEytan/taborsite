@@ -444,3 +444,41 @@
 2013-07-16 18:06:44 overwrite stylesheets/screen.css 
 2013-07-16 18:07:06 overwrite stylesheets/screen.css 
 2013-07-16 18:07:18 identical stylesheets/screen.css 
+2013-07-21 12:14:12 identical stylesheets/screen.css 
+2013-07-21 12:15:15 overwrite stylesheets/screen.css 
+2013-07-21 12:15:24 overwrite stylesheets/screen.css 
+2013-07-21 12:15:37 overwrite stylesheets/screen.css 
+2013-07-21 12:15:40 overwrite stylesheets/screen.css 
+2013-07-21 12:15:48 overwrite stylesheets/screen.css 
+2013-07-21 12:16:20     error sass/screen.scss (Line 132: Undefined variable: "$serif1".)
+2013-07-21 12:16:20 overwrite stylesheets/screen.css 
+2013-07-21 12:16:24 overwrite stylesheets/screen.css 
+2013-07-21 12:16:33 overwrite stylesheets/screen.css 
+2013-07-21 12:18:37 overwrite stylesheets/screen.css 
+2013-07-21 12:22:52 overwrite stylesheets/screen.css 
+2013-07-21 12:23:16 overwrite stylesheets/screen.css 
+2013-07-21 12:23:43 overwrite stylesheets/screen.css 
+2013-07-21 12:23:54 overwrite stylesheets/screen.css 
+2013-07-21 12:23:58 overwrite stylesheets/screen.css 
+2013-07-21 12:24:03 overwrite stylesheets/screen.css 
+2013-07-21 12:26:43 overwrite stylesheets/screen.css 
+2013-07-21 12:26:57 overwrite stylesheets/screen.css 
+2013-07-21 12:27:01 overwrite stylesheets/screen.css 
+2013-07-21 12:27:18 overwrite stylesheets/screen.css 
+2013-07-21 12:27:27 overwrite stylesheets/screen.css 
+2013-07-21 12:27:33 overwrite stylesheets/screen.css 
+2013-07-21 12:29:58 overwrite stylesheets/screen.css 
+2013-07-21 12:30:10 overwrite stylesheets/screen.css 
+2013-07-21 12:30:18 overwrite stylesheets/screen.css 
+2013-07-21 12:34:11 overwrite stylesheets/screen.css 
+2013-07-21 12:34:28 overwrite stylesheets/screen.css 
+2013-07-21 12:41:12     error sass/screen.scss (Line 66: Invalid CSS after "...: 'Merriweather": expected selector or at-rule, was "', serif;")
+2013-07-21 12:41:12 overwrite stylesheets/screen.css 
+2013-07-21 12:41:20     error sass/screen.scss (Line 66: Invalid CSS after "...: 'Merriweather": expected selector or at-rule, was "', serif;")
+2013-07-21 12:41:20 identical stylesheets/screen.css 
+2013-07-21 12:41:33     error sass/screen.scss (Line 66: Invalid CSS after "...: 'Merriweather": expected selector or at-rule, was "', serif;")
+2013-07-21 12:41:33 identical stylesheets/screen.css 
+2013-07-21 12:41:52     error sass/screen.scss (Line 66: Invalid CSS after "...: 'Merriweather": expected selector or at-rule, was "', serif;")
+2013-07-21 12:41:52 identical stylesheets/screen.css 
+2013-07-21 12:42:15 overwrite stylesheets/screen.css 
+2013-07-21 12:42:46 overwrite stylesheets/screen.css 
