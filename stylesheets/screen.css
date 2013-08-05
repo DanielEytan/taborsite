@@ -10,7 +10,7 @@
   font-style: normal;
 }
 
-/* line 49, ../sass/screen.scss */
+/* line 20, ../sass/screen.scss */
 [data-icon]:before {
   font-family: 'icomoon';
   content: attr(data-icon);
@@ -19,7 +19,7 @@
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  margin-right: 15px;
+  margin-right: 8px;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -96,101 +96,99 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background-size: cover;
 }
 */
-/* line 88, ../sass/screen.scss */
+/* line 56, ../sass/screen.scss */
 body {
-  font-family: "Droid Sans", sans-serif;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 30px;
-  color: #3e406b;
+  font-family: "brandon-grotesque", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  color: #1d1d1d;
   -webkit-font-smoothing: antialiased;
+  padding: 20px 80px;
+  border-top: solid 7px #229999;
 }
 
-/* line 100, ../sass/screen.scss */
+/* line 74, ../sass/screen.scss */
 header {
-  padding: 60px;
-  padding-bottom: 0px;
+  padding-bottom: 50px;
+}
+
+/* line 80, ../sass/screen.scss */
+hgroup {
+  border-bottom-width: 1px;
+}
+/* line 85, ../sass/screen.scss */
+hgroup b {
+  color: #229999;
+}
+
+/* line 89, ../sass/screen.scss */
+h1 {
+  font-weight: 700;
+  color: #229999;
+}
+
+/* line 93, ../sass/screen.scss */
+h2 {
+  font-family: "brandon-grotesque", sans-serif;
+  font-weight: 400;
+  font-size: 5rem;
+  line-height: 5.8rem;
+  margin-top: -10px;
+  text-transform: uppercase;
 }
 
 /* line 104, ../sass/screen.scss */
-hgroup {
-  color: #3e406b;
-  padding-right: 400px;
-  padding-bottom: 150px;
-  border-bottom-width: 1px;
-}
-
-/* line 111, ../sass/screen.scss */
-h1 {
-  font-family: "Droid Sans", sans-serif;
-  font-weight: 400;
-}
-
-/* line 117, ../sass/screen.scss */
-h2 {
-  font-family: "Droid Sans", sans-serif;
-  font-weight: 900;
-  font-size: 5rem;
-  color: #1d1d1d;
-  text-align: left;
-  padding: 100px 0;
-}
-
-/* line 130, ../sass/screen.scss */
 h3 {
-  font-family: "Merriweather", serif;
-  font-size: 3.5rem;
-  font-weight: 400;
-  line-height: 4.2rem;
-  margin-top: 150px;
-}
-/* line 140, ../sass/screen.scss */
-h3 a {
-  color: #3e406b;
-}
-
-/* line 146, ../sass/screen.scss */
-p {
-  padding: 30px 0;
-}
-
-/* line 149, ../sass/screen.scss */
-b {
+  margin: 20px 0;
   font-weight: 700;
 }
 
-/* line 152, ../sass/screen.scss */
-address {
-  line-height: 1.5em;
-  font-family: "Droid Sans", sans-serif;
-}
-/* line 157, ../sass/screen.scss */
-address a {
-  color: #3e406b;
-  opacity: 0.5;
-  text-decoration: none;
-}
-/* line 162, ../sass/screen.scss */
-address a:hover {
-  opacity: 1;
-}
-/* line 166, ../sass/screen.scss */
-address div.contact {
-  position: absolute;
-  top: 60px;
-  left: 300px;
-}
-/* line 170, ../sass/screen.scss */
-address div.contact a {
-  margin-right: 40px;
+/* line 108, ../sass/screen.scss */
+p {
+  font-weight: 500;
 }
 
-/* line 176, ../sass/screen.scss */
-section {
-  padding: 30px 60px;
-  color: #fff;
+/* line 119, ../sass/screen.scss */
+a {
+  color: #229999;
+  text-decoration: none;
 }
-/* line 184, ../sass/screen.scss */
+
+/* line 128, ../sass/screen.scss */
+tr td {
+  vertical-align: top;
+  padding-bottom: 1em;
+}
+/* line 131, ../sass/screen.scss */
+tr td:nth-child(odd) {
+  padding-right: 1em;
+  width: 200px;
+  font-weight: 900;
+}
+
+/* line 138, ../sass/screen.scss */
+footer {
+  border-top: solid 10px #3e406b;
+  margin-top: 50px;
+}
+
+/* line 142, ../sass/screen.scss */
+address {
+  line-height: 1.5em;
+}
+/* line 145, ../sass/screen.scss */
+address li {
+  color: #229999;
+  display: inline-block;
+  padding-right: 30px;
+}
+/* line 151, ../sass/screen.scss */
+address li:hover {
+  opacity: 1;
+}
+
+/* line 166, ../sass/screen.scss */
 section#wrapper img.ava {
   width: 20%;
   height: auto;
@@ -200,7 +198,7 @@ section#wrapper img.ava {
   -ms-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
   clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
 }
-/* line 201, ../sass/screen.scss */
+/* line 183, ../sass/screen.scss */
 section#wrapper img.case {
   background-image: linear-gradient(bottom, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%);
   background-image: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%);
@@ -210,20 +208,62 @@ section#wrapper img.case {
   width: 800px;
   display: none;
 }
-/* line 207, ../sass/screen.scss */
+/* line 189, ../sass/screen.scss */
 section.white {
   color: #1d1d1d;
 }
-/* line 210, ../sass/screen.scss */
+/* line 192, ../sass/screen.scss */
 section.white h3 {
   color: #1d1d1d;
 }
-/* line 214, ../sass/screen.scss */
+/* line 196, ../sass/screen.scss */
 section.blue {
   background-color: #3e406b;
 }
 
+/* line 200, ../sass/screen.scss */
+.dn {
+  display: none;
+}
+
+/* line 203, ../sass/screen.scss */
+.header-img {
+  z-index: -1;
+}
+/* line 206, ../sass/screen.scss */
+.header-img img {
+  width: 500px;
+}
+
+/* line 210, ../sass/screen.scss */
+.toggle {
+  text-align: center;
+  display: none;
+  font-size: 5rem;
+  padding: 30px;
+  padding-bottom: 45px;
+  color: #ebc288;
+}
 /* line 219, ../sass/screen.scss */
+.toggle:hover {
+  color: white;
+}
+
+/* line 223, ../sass/screen.scss */
+.more {
+  display: none;
+  padding-top: 40px;
+  padding-right: 60px;
+  background: #ebc288;
+  padding-bottom: 40px;
+}
+/* line 229, ../sass/screen.scss */
+.more table {
+  width: 950px;
+  margin: 0 auto;
+}
+
+/* line 235, ../sass/screen.scss */
 .tags li {
   padding: 1px 15px;
   background-color: #3e406b;
@@ -233,7 +273,7 @@ section.blue {
   border-bottom: 10px solid transparent;
 }
 
-/* line 230, ../sass/screen.scss */
+/* line 246, ../sass/screen.scss */
 #case {
   background-image: linear-gradient(bottom, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
   background-image: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
@@ -243,91 +283,139 @@ section.blue {
   width: 800px;
 }
 
-/* line 236, ../sass/screen.scss */
+/* line 251, ../sass/screen.scss */
 .flex-container {
-  padding: 0;
-  margin-bottom: 20px;
-  list-style: none;
-  opacity: 1;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
   display: flex;
   -webkit-flex-flow: row wrap;
-  justify-content: space-between;
+  -moz-flex-flow: row wrap;
+  -ms-flex-direction: row;
+  -ms-flex-wrap: wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  -ms-flex-pack: flex-start;
+  -ms-justify-content: flex-start;
+  justify-content: flex-start;
+  padding: 60px;
+}
+/* line 256, ../sass/screen.scss */
+.flex-container h3 {
+  font-weight: 900;
+  margin-top: 20px;
+}
+/* line 261, ../sass/screen.scss */
+.flex-container img {
+  min-width: 100%;
 }
 
-/* line 251, ../sass/screen.scss */
-.flex-container:hover {
-  opacity: 0.7;
-}
-
-/* line 254, ../sass/screen.scss */
-.flex-item {
-  margin-top: 10px;
-  margin-right: 50px;
-}
-/* line 258, ../sass/screen.scss */
-.flex-item img {
-  width: 500px;
-  /*@include box-shadow(grey 0px 0px 15px);*/
-  border-top-left-radius: 0.2em;
-  border-top-right-radius: 0.2em;
-}
 /* line 265, ../sass/screen.scss */
-.flex-item h1 {
-  font: "Droid Serif", serif;
-  color: #3e406b;
-  font-weight: 300;
-  width: 200px;
-  border-top-color: #3e406b;
-  border-top-width: 3px;
+.flex-item-25 {
+  -webkit-flex: 0 1 22%;
+  -moz-flex: 0 1 22%;
+  -ms-flex: 0 1 22%;
+  flex: 0 1 22%;
+  font-weight: 900;
+  padding-right: 3%;
+}
+/* line 270, ../sass/screen.scss */
+.flex-item-25 img {
+  display: none;
+  width: 90%;
+  border: solid 2px black;
 }
 /* line 275, ../sass/screen.scss */
-.flex-item p {
-  font: "Droid Sans", sans-serif;
-  color: #1d1d1d;
-  width: 400px;
-  padding-right: 100px;
+.flex-item-25.opacity {
+  opacity: 0.7;
+}
+/* line 277, ../sass/screen.scss */
+.flex-item-25.opacity:hover {
+  opacity: 1;
 }
 /* line 281, ../sass/screen.scss */
-.flex-item a {
-  font-weight: 700;
-  color: #1d1d1d;
-  border-top-style: solid;
-  border-top-width: 3px;
-  text-decoration: none;
-  padding-top: 10px;
-  text-transform: uppercase;
+.flex-item-25 p {
+  margin-top: none;
 }
-/* line 290, ../sass/screen.scss */
-.flex-item h4 {
-  display: none;
-  font-size: 20px;
-  visibility: visible;
-  background-color: #3e406b;
-  padding: 15px;
-  font-weight: 700;
-  margin-top: 100px;
+/* line 284, ../sass/screen.scss */
+.flex-item-25 p.fonts {
+  font-size: 3rem;
 }
-/* line 298, ../sass/screen.scss */
-.flex-item h4 a {
-  color: #edede3;
+/* line 287, ../sass/screen.scss */
+.flex-item-25 a {
+  text-decoration: underline;
+}
+/* line 291, ../sass/screen.scss */
+.flex-item-25 .color-formhaus-1 {
+  background: #ea593d;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+}
+/* line 297, ../sass/screen.scss */
+.flex-item-25 .color-formhaus-2 {
+  background: #489c79;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+}
+/* line 304, ../sass/screen.scss */
+.flex-item-25 a.launch {
+  background: #229999;
+  color: white;
+  padding: 8px 12px;
+  margin: 20px 0;
+  display: inline-block;
+  border-radius: 3px;
+  opacity: 0.8;
+  color: white;
   text-decoration: none;
+}
+/* line 315, ../sass/screen.scss */
+.flex-item-25 a:hover {
+  opacity: 1;
 }
 
-/* line 305, ../sass/screen.scss */
-.flex-item :hover h4 {
-  visibility: visible;
+/* line 320, ../sass/screen.scss */
+.flex-item-375 {
+  -webkit-flex: 0 1 37.5%;
+  -moz-flex: 0 1 37.5%;
+  -ms-flex: 0 1 37.5%;
+  flex: 0 1 37.5%;
 }
 
-/* line 311, ../sass/screen.scss */
+/* line 323, ../sass/screen.scss */
+.flex-item-75 {
+  -webkit-flex: 0 1 75%;
+  -moz-flex: 0 1 75%;
+  -ms-flex: 0 1 75%;
+  flex: 0 1 75%;
+}
+/* line 325, ../sass/screen.scss */
+.flex-item-75 img {
+  max-width: 400px;
+  /*@include box-shadow(grey 0px 0px 15px);*/
+}
+/* line 333, ../sass/screen.scss */
+.flex-item-75 p {
+  margin: 0;
+  padding-right: 100px;
+  padding-bottom: 10px;
+}
+/* line 338, ../sass/screen.scss */
+.flex-item-75 h1 {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+/* line 345, ../sass/screen.scss */
 .flex-item-grow {
   flex-grow: 2;
 }
 
-/* line 315, ../sass/screen.scss */
+/* line 349, ../sass/screen.scss */
 .tags li {
   padding: 1px 15px;
   background-color: #3e406b;

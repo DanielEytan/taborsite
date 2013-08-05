@@ -1,0 +1,32 @@
+@mixin flex-container($justify:flex-start) {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	-moz-flex-flow: row wrap;
+	-ms-flex-direction: row;
+	-ms-flex-wrap: wrap;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+	-webkit-justify-content: $justify;
+	-moz-justify-content: $justify;
+	-ms-flex-pack:$justify;
+	-ms-justify-content:$justify;
+	justify-content:$justify;
+}
+
+@mixin flex-item($width:50%) {
+	-webkit-flex: 0 1 $width;
+	-moz-flex: 0 1 $width;
+	-ms-flex: 0 1 $width;
+	flex: 0 1 $width;
+}
+
+@mixin background-gradient($color1, $color2) {
+ 	background-image: linear-gradient(bottom, $color1 0%, $color2 100%);
+ 	background-image: -o-linear-gradient(bottom, $color1 0%, $color2 100%);
+ 	background-image: -moz-linear-gradient(bottom, $color1 0%, $color2 100%);
+ 	background-image: -webkit-linear-gradient(bottom, $color1 0%, $color2 100%);
+ 	background-image: -ms-linear-gradient(bottom, $color1 0%, $color2 100%);
+ }

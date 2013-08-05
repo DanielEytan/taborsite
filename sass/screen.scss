@@ -2,39 +2,10 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import "mixins";
 
- @mixin background-gradient($color1, $color2) {
- 	background-image: linear-gradient(bottom, $color1 0%, $color2 100%);
- 	background-image: -o-linear-gradient(bottom, $color1 0%, $color2 100%);
- 	background-image: -moz-linear-gradient(bottom, $color1 0%, $color2 100%);
- 	background-image: -webkit-linear-gradient(bottom, $color1 0%, $color2 100%);
- 	background-image: -ms-linear-gradient(bottom, $color1 0%, $color2 100%);
- }
-
- @mixin flex-container($justify) {
-display: -webkit-flex;
-display: -moz-flex;
-display: -ms-flex;
-display: flex;
--webkit-flex-flow: row wrap;
--moz-flex-flow: row wrap;
--ms-flex-direction: row;
--ms-flex-wrap: wrap;
--ms-flex-flow: row wrap;
-flex-flow: row wrap;
--webkit-justify-content: $justify;
--moz-justify-content: $justify;
--ms-flex-pack:$justify;
--ms-justify-content:$justify;
-justify-content:$justify;
-}
-
-@mixin flex-item($width: 50%) {
--webkit-flex: 0 1 $width;
--moz-flex: 0 1 $width;
--ms-flex: 0 1 $width;
-flex: 0 1 $width;
-}
+ 
+@import "compass/css3/box-shadow";
 
 @font-face {
 	font-family: 'icomoon';
@@ -54,24 +25,21 @@ flex: 0 1 $width;
 	font-variant: normal;
 	text-transform: none;
 	line-height: 1;
-	margin-right: 15px;
+	margin-right: 8px;
 	-webkit-font-smoothing: antialiased;
 }
  @import "compass/reset";
- $sans:'Droid Sans', sans-serif;
- $sans2: 'Roboto', sans-serif;
- $sans3: 'Raleway', sans-serif;
-
- $serif: 'Droid Serif', serif;
- $serif2: 'Merriweather', serif;
+ $sans:'Helvetica', sans-serif;
+ $sans2: "brandon-grotesque", sans-serif;
+ $serif: "kepler-std",serif;
  $blue: #3E406B;
  $blue2: #299;
  $dark: #1d1d1d;
  $bright: #EDEDE3;
  $red: #EA593D;
- $deba: #e8deba;
- $color1: red;
- $color2: blue;
+ $hls: #EBC288;
+ $green: #489C79;
+
 
 
 
@@ -87,95 +55,109 @@ flex: 0 1 $width;
 
 body {
 	font: {
-		family: $sans;
-		weight: 300;
-		size: 20px;
+		family: $sans2;
+		weight: 400;
+		size: 1.3rem;
 	}
 	// font-style: italic;
-	line-height: 30px;
-	color: $blue;
+	line-height: 2rem;
+	color: $dark;
 	-webkit-font-smoothing: antialiased;
+	padding: 20px 80px;
+	border-top: solid 7px $blue2;
+	//margin: 15px;
 
 }
+address, hgroup, section, footer {
+	
+}
 header {
-	padding: 60px;
-	padding-bottom: 0px;
+	//padding-top: 40px;
+	padding-bottom: 50px;
+	//background: black*2;
+	//color: white;
 }
 hgroup {
-	color: $blue;
-	padding-right: 400px;
-	padding-bottom:150px;
+	//margin-top: 50px;
+	//padding-right: 400px;
 	//border-bottom-style: dotted;
 	border-bottom-width: 1px;
+	b {
+		color: $blue2;	
+	}
 }
 h1 {
-	font: {
-		family: $sans;
-		weight: 400;
+	font-weight: 700;
+	color: $blue2;
 	}
-}
 h2 {
 	font: {
-		family: $sans;
-		weight: 900;
+		family: $sans2;
+		weight: 400;
 		size: 5rem;
 	}
+	line-height: 5.8rem;
+	margin-top: -10px;
+	//font-style: italic;
+	text-transform: uppercase;
+}
+h3 {
+	margin: 20px 0;
+	font-weight: 700;
+}
+p {
+	font: {
+		weight: 500;
+	}
+	//	margin-top: 20px;
+
 	// border-top-style: solid;
 	// border-top-width: 10px;
 	// border-color:$dark;
-	color: $dark;
-	text-align: left;
-	padding: 100px 0;
-}
-h3 {
-	font: {
-		family: $serif2;
-		size: 3.5rem;
-		weight: 400;
-	}
-	// font-style: italic;
-	// text-transform: uppercase;
-	line-height: 4.2rem;
-	margin-top: 150px;
-	a {
-		color: $blue;
 
+}
+a {
+	color:$blue2;
+	text-decoration: none;
+}
 
-	}
-}
-p {
-	padding:30px 0;
-}
 b {
-	font-weight: 700;
+	//font-weight: 700;
+}
+tr {
+	td {
+		vertical-align: top;
+		padding-bottom: 1em;
+				&:nth-child(odd) {
+					padding-right: 1em;
+					width: 200px;
+					font-weight: 900;
+				}
+	}
+}
+footer {
+	border-top: solid 10px $blue;
+	margin-top: 50px;
 }
 address {
 	line-height: 1.5em;
-	font-family: $sans;
 
-
-	a {	
-		color: $blue;
-		opacity: 0.5;
-		text-decoration: none;
+	li {	
+		//opacity: 0.7;
+		color: $blue2;
+		display: inline-block;
+		padding-right: 30px;
 	}
-	a:hover {
+	li:hover {
 		opacity: 1;
 
 	}
-	div.contact {
-		position: absolute;
-		top: 60px;
-		left: 300px;
-		a {
-			margin-right: 40px;
-		}
-	}
+	
+
 }
 
 section {
-	padding: 30px 60px;
-	color: #fff;
+
 	&#wrapper {
 		// img {
 		// 	max-width: 200px;
@@ -215,6 +197,40 @@ section {
 		background-color: $blue;
 	}
 }
+.dn {
+	display: none;
+}
+.header-img {
+	z-index: -1;
+	
+	img {
+	width: 500px;
+}
+}
+.toggle {
+	text-align: center;
+	display: none;
+	//margin-left: -170px;
+	font-size: 5rem;
+	padding: 30px;
+	padding-bottom: 45px;
+	color: $hls;
+	//border: solid 2px;
+	&:hover {
+		color: white;
+	}
+}
+.more {
+	display: none;
+	padding-top: 40px;
+	padding-right: 60px;
+	background: $hls;
+	padding-bottom: 40px;
+	table {
+		width: 950px;
+		margin: 0 auto;
+	}
+}
 .tags {
 	li {
 		padding: 1px 15px;
@@ -232,80 +248,98 @@ section {
 	width: 800px;
 }
 
-
 .flex-container {
-	padding: 0;
-	margin-bottom: 20px;
-	list-style: none;
-	opacity: 1;
-
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-
-	-webkit-flex-flow: row wrap;
-	justify-content: space-between;
-}
-.flex-container:hover {
-	opacity: 0.7;
-}
-.flex-item {
-	// width: 300px;
-	margin-top: 10px;
-	margin-right: 50px;
+	@include flex-container(flex-start);
+	// margin: 40px 0 80px;
+	padding: 60px;
+	
+	h3 {
+		font-weight: 900;
+		margin-top: 20px;
+		//border-top: solid 2px black;
+	}
 	img {
-		width: 500px;
-		/*@include box-shadow(grey 0px 0px 15px);*/
-		border-top-left-radius: 0.2em;
-		border-top-right-radius: 0.2em;
-
+		min-width: 100%;
 	}
-	h1 {
-		font: $serif;
-		color: $blue;
-		font-weight: 300;
-		width: 200px;
-		// text-transform: uppercase;
-		//border-top-style:solid;
- 		border-top-color:$blue;
- 		border-top-width:3px;
-	}
-	p {
-		font: $sans;
-		color: $dark;
-		width: 400px;
-		padding-right: 100px;
-	}
-	a {
-		font-weight: 700;
-		color: $dark;
-		border-top-style: solid;
-		border-top-width: 3px;
-		text-decoration: none;
-		padding-top:10px;
-		text-transform: uppercase;
-	}
-	h4 {
+}
+.flex-item-25 {
+	@include flex-item($width:22%);
+	//background: $hls;
+	font-weight: 900;
+	padding-right: 3%;
+	img {
 		display: none;
-		font-size: 20px;
-		visibility: visible;
-		background-color: $blue;
-		padding: 15px;
-		font-weight: 700;
-		margin-top: 100px;
-		a {
-		color: $bright;
-		text-decoration: none;
+		width: 90%;
+		border: solid 2px black;
+	}
+	&.opacity {
+		opacity: 0.7;
+		&:hover {
+			opacity:1;
 		}
 	}
-}
-.flex-item :hover {
-	h4 {
-		visibility: visible;
+	p {
+		margin-top: none;
 	}
+	p.fonts {
+		font-size: 3rem;
+	}
+	a {
+		text-decoration: underline;
+
+	}
+	.color-formhaus-1 {
+		background: $red;
+		width: 60px;
+		height: 60px;
+		border-radius: 100%;
+	}
+	.color-formhaus-2 {
+		background: $green;
+		width: 60px;
+		height: 60px;
+		border-radius: 100%;
+	}
+		
+		a.launch {
+		background: $blue2;
+		color: white;
+		padding: 8px 12px;
+		margin: 20px 0;
+		display: inline-block;
+		border-radius: 3px;
+		opacity: 0.8;
+			color: white;
+			text-decoration: none;
+		}
+		a:hover {
+			opacity: 1;
+		}
+	}
+
+.flex-item-375 {
+	@include flex-item($width:37.5%)
 }
+.flex-item-75 {
+	@include flex-item($width:75%);
+	img { 
+		//display: none;
+		max-width: 400px;
+		/*@include box-shadow(grey 0px 0px 15px);*/
+		//border-top-left-radius: 0.2em;
+		//border-top-right-radius: 0.2em;
+		//border: solid 2px black;
+	}
+	p {
+		margin: 0;
+		padding-right: 100px;
+		padding-bottom: 10px;
+	}
+	h1 {
+		margin-top: 0;
+		margin-bottom: 30px;
+	}
+	}
 
 
 .flex-item-grow {
