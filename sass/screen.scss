@@ -33,7 +33,7 @@
  $sans2: "brandon-grotesque", sans-serif;
  $serif: "kepler-std",serif;
  $blue: #3E406B;
- $blue2: #299;
+ $blue2: #EBC288;
  $dark: #1d1d1d;
  $bright: #EDEDE3;
  $red: #EA593D;
@@ -59,28 +59,19 @@ body {
 		weight: 400;
 		size: 1.3rem;
 	}
-	// font-style: italic;
-	line-height: 2rem;
-	color: $dark;
+	line-height: 1.9rem;
+	color: $dark*2;
 	-webkit-font-smoothing: antialiased;
-	padding: 20px 80px;
-	border-top: solid 7px $blue2;
-	//margin: 15px;
-
+	padding: 10px 20px;
+	border-top: solid 10px $hls;
 }
 address, hgroup, section, footer {
 	
 }
 header {
-	//padding-top: 40px;
 	padding-bottom: 50px;
-	//background: black*2;
-	//color: white;
 }
 hgroup {
-	//margin-top: 50px;
-	//padding-right: 400px;
-	//border-bottom-style: dotted;
 	border-bottom-width: 1px;
 	b {
 		color: $blue2;	
@@ -88,17 +79,16 @@ hgroup {
 }
 h1 {
 	font-weight: 700;
-	color: $blue2;
+	// color: $blue2;
 	}
 h2 {
 	font: {
 		family: $sans2;
 		weight: 400;
-		size: 5rem;
+		size: 3rem;
 	}
-	line-height: 5.8rem;
+	line-height: 3.8rem;
 	margin-top: -10px;
-	//font-style: italic;
 	text-transform: uppercase;
 }
 h3 {
@@ -356,4 +346,18 @@ section {
 		border-bottom: 10px solid transparent; 
 
 	}
+}
+@media only screen and (min-width : 1200px) {
+	body {
+		padding: 20px 80px;
+	}
+	h2 {
+	font: {
+		size: 5rem;
+	}
+	line-height: 5.8rem;
+	margin-top: -10px;
+	text-transform: uppercase;
+
+}
 }
